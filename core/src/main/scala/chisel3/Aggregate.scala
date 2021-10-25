@@ -75,6 +75,7 @@ sealed abstract class Aggregate extends Data {
   }
 
   /** Returns a Seq of the immediate contents of this Aggregate, in order.
+  @Contents
     */
   def getElements: Seq[Data]
 

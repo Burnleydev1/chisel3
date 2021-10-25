@@ -1033,6 +1033,7 @@ package experimental {
   *      io.outPacket <> reg
   *   }
   * }}}
+  * @group Bundle
   */
 abstract class Bundle(implicit compileOptions: CompileOptions) extends Record {
   override def className: String = this.getClass.getSimpleName match {

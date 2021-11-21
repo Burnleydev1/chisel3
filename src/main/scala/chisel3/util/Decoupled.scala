@@ -27,17 +27,17 @@ abstract class ReadyValidIO[+T <: Data](gen: T) extends Bundle
     case _ => gen
   }
 
-/** Indicates that the consumer is ready to accept the data this cycle
+
   * @group Signals
   */
   val ready = Input(Bool())
   
-/** Indicates that the producer has put valid data in 'bits' 
+
   * @group Signals
   */
   val valid = Output(Bool())
   
-/** The data to be transferred when ready and valid are asserted at the same cycle
+
   * @group Signals
   */
   val bits  = Output(genType)
